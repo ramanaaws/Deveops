@@ -1,0 +1,175 @@
+
+  ls -ltrh
+    2  systemctl status jenkins
+    3  yum update
+    4  wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
+    5  yum install wget
+    6  wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
+    7  rpm -ivh jdk-8u131-linux-x64.rpm
+    8  wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    9  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   10  yum -y install jenkins -y
+   11  systemctl start jenkins
+   12  systemctl enable jenkins
+   13  systemctl status jenkins
+   14  nslookup jenkins-alb-467420693.ap-south-1.elb.amazonaws.com
+   15  cat /var/lib/jenkins/secrets/initialAdminPassword
+   16  cd ..
+   17  cd opt
+   18  cd ..
+   19  yum install git
+   20  cd opt
+   21  git clone https://github.com/spring-petclinic/spring-framework-petclinic.git
+   22  ls -ltrh
+   23  cd spring-framework-petclinic/
+   24  ls -ltrh
+   25  cat pom.xml
+   26  > pom.xml
+   27  vi pom.xml
+   28  ls -ltrh
+   29  cd src
+   30  cd main
+   31  cd db
+   32  ls -ltrh
+   33  cd ..
+   34  cd main
+   35  ls -ltrh
+   36  cd ..
+   37  cd /main
+   38  cd main/
+   39  ls -ltrh
+   40  cd resources
+   41  ls -ltrh
+   42  cd db
+   43  ls -ltrh
+   44  cd mysql
+   45  ls -ltrh
+   46  vi schema.sql
+   47  cd /opt
+   48  ls -ltrh
+   49  cd spring-framework-petclinic/
+   50  cd tmp/
+   51  cd tmp
+   52  ls -ltrh
+   53  cd /tmp
+   54  wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
+   55    ls -ltrh
+   56  rpm -ivh jdk-8u131-linux-x64.rpm
+   57    java -version
+   58  cd /opt
+   59  wget https://apachemirror.wuchna.com/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.zip
+   60  ls -ltrh
+   61  unzip apache-maven-3.8.1-bin.zip
+   62  yum install unzip
+   63  unzip apache-maven-3.8.1-bin.zip
+   64  ls -ltrh
+   65  mv apache-maven-3.8.1 maven38
+   66  ls -ltrh
+   67  chmod -R 700 maven38/
+   68  ls -ltrh
+   69  cd maven38/
+   70  ls -ltrh
+   71  cd bin/
+   72  cd ..
+   73  cd spring-framework-petclinic/
+   74  /opt/maven38/bin/mvn clean package -P MySQL
+   75  ls -ltrh
+   76  cd target
+   77  ls -ltrh
+   78  cd ..
+   79  cd src
+   80  ls -ltrh
+   81  cd main
+   82  ls -ltrh
+   83  cd resources/
+   84  ls -ltrh
+   85  cd db/
+   86  ls -ltrh
+   87  cd mysql
+   88  ls -ltrh
+   89  vi schema.sql
+   90  cd ../../../
+   91  cd ../..
+   92  /opt/maven38/bin/mvn clean package -P MySQL
+   93  ls -ltrh
+   94  cd target/
+   95  ls -ltrh
+   96  cd ../..
+   97  ls -ltrh
+   98  cd spring-framework-petclinic/
+   99  /opt/maven38/bin/mvn clean package -P MySQL
+  100  ls -ltrh
+  101  cd target/
+  102  ls -ltrh
+  103  vi maven-status/
+  104   cd surefire-reports/
+  105  ls -ltrh
+  106  ls
+  107  cd
+  108  ls
+  109  cd /opt
+  110  ls
+  111  cd spring-framework-petclinic/
+  112  ls
+  113  rm -rf target/
+  114  ls
+  115  cd src/
+  116  ls
+  117  cd main/\
+  118  cd main/
+  119  ls
+  120  cd resources/
+  121  ls
+  122  cd db
+  123  ls
+  124  cd mysql/
+  125  ls
+  126  vi schema.sql
+  127  cd
+  128  cd /opt
+  129  ls
+  130  cd spring-framework-petclinic/
+  131  ls
+  132  /opt/maven38/bin/mvn clean package -P MySQL
+  133  ls
+  134  rm -rf target/
+  135  ls
+  136  vi pom.xml
+  137  ls
+  138  /opt/maven38/bin/mvn clean package -P MySQLcd
+  139  cd
+  140  ls
+  141  cd /opt
+  142  ls
+  143  cd spring-framework-petclinic/
+  144  /opt/maven38/bin/mvn clean package -P MySQLcd
+  145  /opt/maven38/bin/mvn clean package -P MySQL
+  146  ls -ltrh
+  147  cd target
+  148  ls -ltrh
+  149  cd
+  150  exit
+  151  ls
+  152  cd /tmp
+  153  ls -ltrh
+  154  exit
+  155  cd /tmp
+  156  ls -ltrh
+  157  cd /opt
+  158  cd spring-framework-petclinic/
+  159  scp -i /tmp/gangiproject.pem pet
+  160  cd target
+  161  scp -i /tmp/gangiproject.pem petclinic.war ec2-user@Scp -i /tmp/gangiproject.pem petclinic.war ec2-user@10.0.11.237:/tmp
+
+Tomcat after copy-  cd..
+    2  cd opt
+    3  cd ..
+    4  cd opt
+    5  ls -ltrh
+    6  cd /tmp/
+    7  ls -ltrh
+    8  cp petclinic.war /opt/tomcat/webapps/
+    9  curl -I http://localhost:8080/petclinic
+   10  history
+
+

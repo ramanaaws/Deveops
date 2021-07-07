@@ -1,0 +1,16 @@
+  mkdir repos
+    cd repos/
+    git clone https://github.com/ramanaaws/java-hello-world-with-maven.git
+    ls
+    cd java-hello-world-with-maven/
+    id branch
+    git branch
+    git checkout -b devops
+    pwd
+    git push origin devops
+    git push origin devops
+    git checkout master
+    git checkout -b staging
+    git push origin staging
+    ls
+    pwd

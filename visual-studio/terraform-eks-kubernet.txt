@@ -1,0 +1,66 @@
+  aws
+    2  curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.20.4/2021-04-12/bin/linux/amd64/kubectl
+    3  ls -ltrh
+    4  chmod 755  kubectl
+    5  ls -ltrh
+    6  mv  kubectl
+    7  mv  kubectl /usr/local/bin/
+    8  kubectl
+    9  wget https://releases.hashicorp.com/terraform/1.0.1/terraform_1.0.1_linux_amd64.zip
+   10  ls -ltrh
+   11  unzip terraform_1.0.1_linux_amd64.zip
+   12  ls -ltrh
+   13  mv terraform /usr/local/bin/
+   14  ls -ltrh
+   15  yum install git
+   16  git clone https://github.com/hashicorp/learn-terraform-provision-eks-cluster
+   17  ls -ltrh
+   18  cd learn-terraform-provision-eks-cluster/
+   19  terraform init
+   20   terraform init -upgrade
+   21  terraform plan
+   22  terraform apply
+   23  cd ..
+   24  pwd
+   25  mkdir .kube
+   26  cd .kube/
+   27  vi config
+   28  kubectl get nodes
+   29  cd ..
+   30  pwd
+   31  curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/aws-iam-authenticator
+   32  ls -ltrh
+   33  chmod 755 aws-iam-authenticator
+   34  mv aws-iam-authenticator /usr/local/bin/
+   35  kubectl get nodes
+   36  cd .kube
+   37  ls -ltrh
+   38  more config
+   39  kubectl get ns
+   40  kubectl get po -n kube-system
+   41  kubectl get po -n kube-system -o wide
+   42  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-0.32.0/deploy/static/provider/aws/deploy.yaml
+   43  kubectl get ns
+   44  kubectl get po -n ingress-nginx
+   45  kubectl get po -n ingress-nginx -o wide
+   46  kubectl get deployment -n ingress-nginx
+   47  kubectl get rep -n ingress-nginx
+   48  kubectl get rs -n ingress-nginx
+   49  kubectl get svc -n  ingress-nginx
+   50  cd ..
+   51  kubectl create ns app1
+   52  vi app2.yaml
+   53  kubectl apply -f app2.yaml
+   54  kubectl get ns
+   55  kubectl delete -f app2.yaml
+   56  kubectl get ns
+   57  vi app1.yaml
+   58  kubectl apply -f app1.yaml
+   59  kubectl get po -n app1.yaml
+   60  kubectl get po -n app1
+   61  kubectl get po -n app1 -o wide
+   62  kubectl delete po nginx-deployment-66b6c48dd5-l7zls -n app1
+   63  kubectl get po -n app1 -o wide
+   64  vi app1-svc.yaml
+   65  kubectl apply -f app1-svc.yaml
+   66  kubectl get service -n app1

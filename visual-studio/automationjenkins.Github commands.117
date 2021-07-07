@@ -1,0 +1,51 @@
+  ssh -i automationjen.pem ec2-user@18.117.185.65
+    scp -i automationjen.pem automationjen.pem ec2-user@18.117.185.65
+    scp -i automationjen.pem automationjen.pem ec2-user@18.117.185.65:/ec2-user
+    scp -i automationjen.pem automationjen.pem ec2-user@18.117.185.65:ec2-user
+    ssh -i automationjen.pem ec2-user@18.117.185.65
+    scp -i automationjen.pem automationjen.pem ec2-user@18.117.185.65:/home/ec2-us
+    ls
+    cd downloads/
+    ssh -i automationjen.pem ec2-user@18.117.185.65
+    ssh -i automationjen.pem ec2-user@18.117.185.65
+    ssh -i automationjen.pem ec2-user@18.117.185.65
+    ssh -i automationjen.pem ec2-user@18.117.185.65
+    cd Downloads/
+    ssh -i automationjen.pem ec2-user@18.117.185.65
+    cd Downloads/
+    ssh -i automationjen.pem ec2-user@18.117.185.65
+    ssh-keygen.exe
+    cd .ssh
+    ls
+    cat id_rsa.pub
+    ssh -T git@github.com
+    cd repos
+    cd ..
+    cd repos
+    git clone git@github.com:ramanaaws/spring-framework-petclinic.git
+     ls
+    cs spring-framework-petclinic/
+    cd spring-framework-petclinic/
+    ls
+    ls -ltrh
+    ls -ltra
+    cd .git
+    ls -ltrh
+    cat config
+    ls
+    cd repos/
+    ls
+    cd spring-framework-petclinic/
+    git status
+    git add .
+    git status
+    git commit -m 'schema.sql update with my database'
+    git status
+    git add .
+    git status
+    git commit -m 'pom.xml updated'
+    git push origin master
+    cd repos/
+    ls
+    cd spring-framework-petclinic/
+    history

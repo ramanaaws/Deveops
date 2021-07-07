@@ -1,0 +1,68 @@
+ systemctl status jenkins
+    2  java -version
+    3  cat /var/lib/jenkins/secrets/initialAdminPassword
+    4  exit
+    5  su -jenkins
+    6  su - jenkins
+    7  cat /etc/passwd
+    9  su - jenkins -s /bin/bash
+   10  vi /etc/passwd
+   11  su - jenkins
+   12  yum install git -y
+   13  su - jenkins
+   14  vi maven.sh
+   15  chmod 700 maven.sh
+   16  ./maven.sh
+   17  cd /opt
+   18  ls
+   19  cd maven38/
+   20  ls
+   21  cd bin/
+   22  ls
+   23  cd
+   24  vn
+   25  mvn
+   26  yum install git -y
+   27  /opt/maven38/bin/mvn clean package
+   28  cd /opt
+   29  ls
+   30  cd maven38/
+   31  ls
+   32  cd target/
+   33  cd lib/
+   34  ls
+   35  cd bin/
+   36  cd ..
+   37  cd bin/
+   38  ls
+   39  cd ..
+   40  ls
+   41  cd ..
+   42  cd maven38/
+   43  ls
+   44  cd bin/
+   45  ls
+   46  cd mvn/
+   47  cd ..
+   48  ls
+   49  cd maven38/
+   50  ls -ltrh
+   51  cd conf/
+   52  ls -ltrh
+   53  cd ..
+   54  cd bin/
+   55  ls -ltrh
+   56  cd /
+   57  su -jenkins
+   58  su - jenkins
+   59  cd .ssh
+   60  cd rsa
+   61  su - jenkins
+   62  + scp /var/lib/jenkins/workspace/dev-petclinic/target/petclinic.war root@192.0.10.199:/opt/tomcat/webapps
+   63  scp /var/lib/jenkins/workspace/dev-petclinic/target/petclinic.war root@192.0.10.199:/opt/tomcat/webapps
+   65  yum install telnet
+   68  telnet 192.0.10.199 22
+   69  su - jenkins
+   70  cd /opt
+   71  ls -ltrh
+   72  su - jenkins

@@ -1,0 +1,50 @@
+  1  cd /opt
+    2  wget https://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.48/bin/apache-tomcat-9.0.48-windows-x64.zip
+    3  ls -ltrh
+    4  unzip -xzf apache-tomcat-9.0.48-windows-x64.zip
+    5  ls -ltrh
+    6  unzip apache-tomcat-9.0.48-windows-x64.zip
+    7  ls -ltrh
+    8  mv apache-tomcat-9.0.48 tomcat
+    9  ls -ltrh
+   10  chmod -R 700 tomcat/
+   11  ls -ltrh
+   12  wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
+   13  ls -ltrh
+   14  rpm -ivh jdk-8u131-linux-x64.rpm
+   15  cd /opt/tomcat/
+   16  ls -ltrh
+   17  cd /bin
+   18  ./startup.sh
+   19  ls -ltrh *.sh
+   20  cd /
+   21  cd /opt
+   22  ls -ltrh
+   23  cd /tomcat
+   24  cd /tomcat/
+   25  cd tomcat/
+   26  ls -ltrh
+   27  cd bin/
+   28  ls -ltrh
+   29  ./startup.sh
+   30  cd /opt
+   31    wget https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/wls/10g/r3/cluster/session_state/files/shoppingcart.zip
+   32  ls -ltrh
+   33  unzip shoppingcart.zip
+   34  cp shoppingcart.war tomcat/webapps/
+   35  ls -ltrh
+   36  cd tomcat/
+   37  cd webapps/
+   38  ls -ltrh
+   39  exit
+   40  cd .ssh
+   41  ls
+   42  cat authorized_keys
+   43  vi authorized_keys
+   44  cd /opt
+   45  ls
+   46  cd tomcat/
+   47  ls
+   48  cd bin/
+   49  ls -ltrh *.sh
+   50  ./startup.sh
